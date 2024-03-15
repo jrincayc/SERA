@@ -35,6 +35,19 @@
 #define CP_WIDTH 200
 #define CP_SHADOW_THICKNESS 3
 
+Widget SetColorShellColor, ColorSliders[3],
+  RG_body_color[MAXNUMBODIES], RG_body_active[MAXNUMBODIES],
+  RG_body_innerform[MAXNUMBODIES],
+  RG_speed, RG_speed_form, RG_speed_textbox,
+  RG_numbodies, RG_numbodies_form, RG_numbodies_textbox,
+  RG_body_name[MAXNUMBODIES],
+  threshold_color_button,
+  *grow_3D_bounds,
+  *copy_body_from_to,
+  brush_button[5],
+  apply_threshold_to_all;
+
+
 /* INTERNAL STRUCTURES *******************************************/
 
 typedef struct _pixel_inf {
