@@ -55,7 +55,7 @@ typedef struct _overlayInfo_t
 %%%%  GLOBALS
 %%%%
 %%%%%%%%%%%%%%%%%%%%%%%*/
-overlayInfo_t overlayInfo;
+extern overlayInfo_t overlayInfo;
 
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

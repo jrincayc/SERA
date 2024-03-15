@@ -19,6 +19,7 @@
 
 Cursor * global_image_cursor_ptr = (Cursor *)NULL;
 int see_watch = 0;
+struct _HISTO_INFO HISTO_INFO;
 
 /* Assert, we wish to keep track of .uv files so we can start BNCT3D with
  * them.  We will remember up to REMEMBER_REGION_FILES files.  We'll also keep
