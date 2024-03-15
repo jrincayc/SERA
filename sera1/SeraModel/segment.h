@@ -3,7 +3,7 @@
 #include "image_matrix.h"
 
 /* GLOBALS *******************************************************/
-Widget SetColorShellColor, ColorSliders[3],
+extern Widget SetColorShellColor, ColorSliders[3],
   RG_body_color[MAXNUMBODIES], RG_body_active[MAXNUMBODIES],
   RG_body_innerform[MAXNUMBODIES],
   RG_speed, RG_speed_form, RG_speed_textbox,

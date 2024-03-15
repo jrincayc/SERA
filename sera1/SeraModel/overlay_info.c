@@ -12,6 +12,8 @@
 #include "overlay_info.h"
 #include "libqsh.h"
 
+overlayInfo_t overlayInfo;
+
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
 %%%  Local Prototypes

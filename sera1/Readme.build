@@ -57,8 +57,6 @@ ln -s GL GLw
 
 #Notes for compiling with newer compiler (circa 2024)
 
-For SeraModel, add -fcommon to CCOPTIONS
-
 For SeraMC, Change FC to gfortran,
 and add compiler flags to FDEBUGFLAGS:
 --d-lines-as-comments -std=legacy

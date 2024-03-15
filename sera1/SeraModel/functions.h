@@ -24,7 +24,9 @@ struct _HISTO_INFO {
   int see_overall_histo;
   Widget hdraw_area;
   int histo_scaling;
-} HISTO_INFO;
+};
+
+extern struct _HISTO_INFO HISTO_INFO;
 
 
 typedef struct _loader_struct {
