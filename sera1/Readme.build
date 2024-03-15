@@ -59,7 +59,7 @@ ln -s GL GLw
 
 For SeraMC, Change FC to gfortran,
 and add compiler flags to FDEBUGFLAGS:
---d-lines-as-comments -std=legacy
+--d-lines-as-comments
 
 Adjust LIBUV_FLAGS in config/Local.def
 to one of:
