@@ -1718,7 +1718,7 @@ c                                                                       part   1
                                                                         surf  18
       DIMENSION values(n_act+nedt+5),itype(n_act+nedt+5)                ULTKERM
      *,cor(6),del(3),xrange(2),yrange(2),zrange(2),b10_ratio(*)         surf  20
-     *,rbe_value(*),vref(n_act+nedt+5)                                  surf  21
+     *,rbe_value(*),vref(n_act+nedt+5),in_reg(ir_max)                   surf  21
 
 c-----------------------------------------------------------------------Glossary
 c        b10_ratio  tissue to blood B10 concentration                   Glossary
@@ -2423,7 +2423,8 @@ c write contour data to file 24, also write mask corresponding to imname
      .              noa   ,iitype
 
       DIMENSION values(n_act+nedt+5),itype(n_act+nedt+5),b10_ratio(*),  ULTKERM
-     *rbe_value(*),vref(n_act+nedt+5),ipix(npix),Pvec(3),xbp(3),xbp2(3)
+     *rbe_value(*),vref(n_act+nedt+5),ipix(npix),Pvec(3),xbp(3),xbp2(3),
+     *in_reg(ir_max)
 
 c-----------------------------------------------------------------------Glossary
 c        ap         transform image to model coor.                      Glossary
@@ -3230,7 +3231,7 @@ c write contour data to file 'DX.3d'
      * ,nuvreg,numslices,width,height
 
       DIMENSION values(n_act+nedt+5),itype(n_act+nedt+5),b10_ratio(*)
-     *,rbe_value(*),vref(n_act+nedt+5)
+     *,rbe_value(*),vref(n_act+nedt+5),in_reg(ir_max)
 
 c-----------------------------------------------------------------------Glossary
 c        ap         transform image to model coor.                      Glossary
