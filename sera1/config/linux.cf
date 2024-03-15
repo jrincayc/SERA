@@ -430,4 +430,4 @@ GL_INCLUDES = -I/usr/include
 GL_LIBS             = -lGLwM -lGLU -lGL -lstdc++
 
 
-LIBUV_FLAGS         = -DTWO_UNDERSCORE
+LIBUV_FLAGS         = -DONE_UNDERSCORE
