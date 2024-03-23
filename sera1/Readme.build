@@ -49,7 +49,7 @@ mkdir /usr/local/mesa4/man
 mkdir /usr/local/mesa4/man/man3
 make install
 #Link GL to GLw so that sera can find include files.
-cd /usr/local/mesa4/include 
+cd /usr/local/mesa4/include
 ln -s GL GLw
 
 #All done.
@@ -57,9 +57,10 @@ ln -s GL GLw
 
 #Notes for compiling with newer compiler (circa 2024)
 
-For SeraMC, Change FC to gfortran,
-and add compiler flags to FDEBUGFLAGS:
---d-lines-as-comments
+For SeraMC, FC is set to gfortran in linux.
+The argument --d-lines-as-comments is added to FortranDebugFlags
+by default, but for extra debugging this can be switched to
+--d-lines-as-code
 
 Adjust LIBUV_FLAGS in config/Local.def
 to one of:

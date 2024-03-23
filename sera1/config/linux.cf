@@ -121,8 +121,12 @@ XCOMM binutils:	(LinuxBinUtilsMajorVersion)
 /* For compatibility */
 #define SourceDefines		LinuxSourceDefines
 
+#ifndef HasGcc
 #define HasGcc			YES
+#endif
+#ifndef HasGcc2
 #define HasGcc2			YES
+#endif
 #ifndef HasGcc2ForCplusplus
 # define HasGcc2ForCplusplus	YES
 #endif
@@ -398,13 +402,19 @@ XCOMM binutils:	(LinuxBinUtilsMajorVersion)
 XCOMM The following section is for parameters included in the BNCT project.
 XCOMM Note: -lX11 MUST be the last library listed
 
+#ifndef FortranCmd
+#define FortranCmd gfortran
+#endif
+
+#ifndef FortranDebugFlags
+#define FortranDebugFlags -O1 --d-lines-as-comments
+#endif
 
 #ifndef REDHAT
 #define StandardIncludes  -I/usr/dt/include -I/usr/X11R6/include -I$(TOP)/Shared/include
 #define ExtraLibraries    -L/usr/dt/lib -L/usr/X11R6/lib -L$(TOP)/Shared/lib
 EXTRA_X_LIBS        = -lXmu -lXt -lSM -lICE -lXext -lXintl -lXi -lX11
 #else
-#define FortranDebugFlags -O1
 #define StandardIncludes  -I/usr/X11R6/include -I$(TOP)/Shared/include
 #define ExtraLibraries    -L/usr/X11R6/lib -L$(TOP)/Shared/lib
 EXTRA_X_LIBS        = -lXmu -lXt -lSM -lICE -lXext -lXp -lXi -lX11
