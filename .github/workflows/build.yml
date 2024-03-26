@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: install
-      run: sudo apt-get install libmotif-dev libxpm-dev gfortran xutils-dev libglx-dev
+      run: sudo apt-get install libmotif-dev libxpm-dev gfortran xutils-dev libglx-dev libgl-dev
     - name: build
       run: cd sera1 && ./fullbuild
     - name: make_all
