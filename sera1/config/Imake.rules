@@ -1836,6 +1836,20 @@ name::									@@\
 	done
 #endif
 
+/*
+ * MakeSubdirsOrExit - recursively make a series of steps
+ */
+#ifndef MakeSubdirsOrExit
+#define MakeSubdirsOrExit(dirs)						@@\
+all::									@@\
+	@MakeFlagsToShellFlags(ik,set +e); \				@@\
+	for i in dirs ;\						@@\
+	do \								@@\
+		echo "making all in $(CURRENT_DIR)/$$i..."; \		@@\
+		(cd $$i &&  $(MAKE) $(MFLAGS) PassCDebugFlags all) || exit -1; \	@@\
+	done
+#endif
+
 
 /*
  * NamedMakeSubdirs - generate rules to do makes in the given subdirectories.

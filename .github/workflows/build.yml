@@ -17,3 +17,5 @@ jobs:
       run: sudo apt-get install libmotif-dev libxpm-dev gfortran xutils-dev
     - name: build
       run: cd sera1 && ./fullbuild
+    - name: make_all
+      run: cd sera1 && make all
