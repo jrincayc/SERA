@@ -2,7 +2,7 @@
 SERA_HOME=`dirname $0`
 cd $SERA_HOME
 export SERA_HOME=`pwd`
-echo $SERA_HOME
+echo SERA_HOME=$SERA_HOME
 touch $SERA_HOME/config/Local.def
 imake -I./config
 make Makefile
