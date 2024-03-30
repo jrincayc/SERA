@@ -1,0 +1,19 @@
+name: build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: install
+      run: sudo apt-get install libmotif-dev libxpm-dev gfortran xutils-dev libglx-dev libgl-dev libxmu-dev libglu1-mesa-dev libxi-dev
+    - name: build
+      run: cd sera1 && ./fullbuild
