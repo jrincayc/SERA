@@ -5,16 +5,15 @@ only include code that can be open sourced.
 
 WARNING:
 
-SERA was last tested over a decade ago with 32 bit machines and the
+SERA was last fully tested over a decade ago with 32 bit machines and the
 compilers at the time. SERA also has had changes to remove previous
 versions of xmgr and libnurb from brlcad as the previous versions
 could not be distributed as open source. Use with current compilers
-has not been tested.
+and the changes to open source SERA have not been fully tested.
 
-This repository is not being developed.
-Check the forks https://github.com/IdahoLabUnsupported/SERA/forks
-and the forked repository https://github.com/jrincayc/SERA
-for possible new development.
+This repository is being maintained by volunteers.
+There may be other active forks listed at:
+https://github.com/IdahoLabUnsupported/SERA/forks
 
 Some compiling documentation is available in:
 sera1/Readme.build and sera1/ImakeREADME
