@@ -9,5 +9,5 @@ Shared Sera3d SeraCalc SeraDose SeraImage \
 SeraMC SeraMenu SeraModel SeraPlan SeraPlot \
 Util
 
-MakeSubdirs($(SUBDIRS))
+MakeSubdirsOrExit($(SUBDIRS))
 DependSubdirs($(SUBDIRS))

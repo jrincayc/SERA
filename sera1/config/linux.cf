@@ -417,7 +417,7 @@ EXTRA_X_LIBS        = -lXmu -lXt -lSM -lICE -lXext -lXintl -lXi -lX11
 #else
 #define StandardIncludes  -I/usr/X11R6/include -I$(TOP)/Shared/include
 #define ExtraLibraries    -L/usr/X11R6/lib -L$(TOP)/Shared/lib
-EXTRA_X_LIBS        = -lXmu -lXt -lSM -lICE -lXext -lXp -lXi -lX11
+EXTRA_X_LIBS        = -lXmu -lXt -lSM -lICE -lXext -lXi -lX11
 #endif
 
 XCOMM Location for libraries built withing the project.
